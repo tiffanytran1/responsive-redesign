@@ -1,0 +1,283 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Studio</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <div id="logoBar">
+      <h1>Standardizing Dropdown Menus</h1> 
+     <!-- <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/> -->
+      <h2>Comparing different implementations and key steps for accessibility
+      </h2>
+    </div>
+    <div id="staffGallery">
+      <img class="galleryImage" src="./assets/CAB.png"/>
+      <img class="galleryImage" src="./assets/drive.png"/>
+      <img class="galleryImage" src="./assets/cs.png"/>
+    </div> 
+
+    <h3>Designers are encouraged to consider <span class="blue-text">mismatches</span>, which Kat Holmes defines as 
+      <span class="blue-text">instances where poor design hinders human interactions</span>.
+    </h3>
+
+    <div class="video-container">
+      <h4>Notice how keyboard interactions cannot access the <span class="blue-text">People</span>, <span class="blue-text">Modified</span>, and <span class="blue-text">Source</span> dropdown menus.
+      </h4>
+        <video class="video" muted autoplay loop>
+          <source src="./assets/video.mp4" type="video/mp4">
+        </video>
+    </div>  
+
+    <h4>Let's examine the <span class="purple-text"><u>inputs</u></span> and <span class="orange-text"><u>outputs</u></span> of three applications commonly used by Brown CS students
+    </h4>
+    <p><span class="purple-text">Inputs: How a user interacts with a component to change its state or trigger actions</span>
+    </p>
+    <p><span class="orange-text">Outputs: Shows a component’s state after an input, through visual changes or alt text</span>
+    </p>
+
+  <h5>1. Courses @ Brown</h5>
+    <div id="cabGallery">
+      <img class="cabImage" src="./assets/cab1.png"/>
+      <img class="cabImage" src="./assets/cab2.png"/>
+      <img class="cabImage" src="./assets/cab3.png"/>
+      <img class="cabImage" src="./assets/cab4.png"/>
+      <img class="cabImage" src="./assets/cab5.png"/>
+    </div> 
+    <h6>'Semester' Dropdown Menu in varying states
+    </h6>
+
+    <div class="input-container">
+      <h4><span class="purple-text"><u>Inputs</u></span></h4>
+      <h4><span class="orange-text"><u>Outputs</u></span></h4>
+    </div>  
+
+    <table>
+      <thead>
+        <tr>
+          <th><span class="purple-text"><u>Mouse & Touchpad</u</span></th>
+          <th><span class="purple-text"><u>Keyboard</u></span></th>
+          <th><span class="purple-text"><u>Touch</u></span></th>
+          <th><span class="orange-text"><u>Visual Cues</u></span></th>
+          <th><span class="orange-text"><u>Audio Cues</u></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1. Click into dropdown menu
+            <br><br>2. Scroll through options
+            <br><br>3. Click desired option
+            <br><br><span class="color-text"><u>PROS:</u></span> Component is simple, very learnable </td>
+
+          <td>1. Tab through website until at dropdown menu
+            <br><br>2. Press down arrow to access dropdown menu and navigate to desired option
+            <br><br>3. Press enter key
+            <br><br><span class="color-text"><u>PROS:</u></span> Component is simple, very learnable </td>
+
+          <td>1. Press dropdown menu button 
+            <br><br>2. Press desired option
+            <br><br><span class="red-text"><u>CONS:</u></span> Dropdown menu is very long, easy to lose track of where you are </td>
+
+          <td>- Active: Down arrow appears 
+            <br><br> - Focused: Blue outline surrounds dropdown menu 
+            <br><br> - Selected: Current option is highlighted
+            <br><br><span class="color-text"><u>PROS:</u></span> Dropdown is accessible; colors are distinct</td>
+
+          <td>- Click: Plays when menu is selected 
+            <br><br> - Screen Reader: Focused option announced with status
+            <br><br> - Navigation Cue: Sound when moving through options
+            <br><br><span class="red-text"><u>CONS:</u></span> Screenreader is very confusing </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h5>2. Google Drive</h5>
+    <div id="driveGallery">
+      <img class="driveImage" src="./assets/drive1.png"/>
+      <img class="driveImage" src="./assets/drive2.png"/>
+      <img class="driveImage" src="./assets/drive3.png"/>
+      <img class="driveImage" src="./assets/drive4.png"/>
+      <img class="driveImage" src="./assets/drive5.png"/>
+    </div> 
+    <h6>'Type' Dropdown Menu in varying states
+    </h6>
+
+    <div class="input-container">
+      <h4><span class="purple-text"><u>Inputs</u></span></h4>
+      <h4><span class="orange-text"><u>Outputs</u></span></h4>
+    </div>  
+
+    <table>
+      <thead>
+        <tr>
+          <th><span class="purple-text"><u>Mouse & Touchpad</u</span></th>
+            <th><span class="purple-text"><u>Keyboard</u></span></th>
+            <th><span class="purple-text"><u>Touch</u></span></th>
+            <th><span class="orange-text"><u>Visual Cues</u></span></th>
+            <th><span class="orange-text"><u>Audio Cues</u></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1. Click into dropdown menu
+            <br><br>2. Click desired option
+            <br><br><span class="color-text"><u>PROS:</u></span> Component is simple, very learnable </td>
+
+          <td>1. Back tab through website until at dropdown menu
+            <br><br>2. Press down arrow to access dropdown menu and navigate to desired option
+            <br><br>3. Press enter key
+            <br><br><span class="red-text"><u>CONS:</u></span> Not all dropdown menus accessible with keyboard actions</td>
+          <td>N/A</td>
+          <td> - Focused: 1. Curser changes to pointer; 2. Menu changes shade
+            <br><br> - Selected: Current option is highlighted
+            <br><br><span class="color-text"><u>PROS:</u></span> Dropdown is accessible; colors are distinct</td>
+          <td>- Click: Plays when menu is selected 
+            <br><br> - Screen Reader: Focused option announced with status
+            <br><br> - Navigation Cue: Sound when moving through options
+            <br><br><span class="red-text"><u>CONS:</u></span> Screenreader is very confusing </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h5>3. Brown's Computer Science Website</h5>
+    <div id="csGallery">
+      <img class="csImage" src="./assets/cs1.png"/>
+      <img class="csImage" src="./assets/cs2.png"/>
+      <img class="csImage" src="./assets/cs3.png"/>
+      <img class="csImage" src="./assets/cs4.png"/>
+      <img class="csImage" src="./assets/cs5.png"/>
+    </div> 
+    <h6>'About' Dropdown Menu in varying states
+    </h6>
+
+    <div class="input-container">
+      <h4><span class="purple-text"><u>Inputs</u></span></h4>
+      <h4><span class="orange-text"><u>Outputs</u></span></h4>
+    </div>  
+
+    <table>
+      <thead>
+        <tr>
+          <th><span class="purple-text"><u>Mouse & Touchpad</u</span></th>
+            <th><span class="purple-text"><u>Keyboard</u></span></th>
+            <th><span class="purple-text"><u>Touch</u></span></th>
+            <th><span class="orange-text"><u>Visual Cues</u></span></th>
+            <th><span class="orange-text"><u>Audio Cues</u></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1. Hover on dropdown menu
+            <br><br>2. Scroll through options
+            <br><br>3. Click desired option
+            <br><br><span class="color-text"><u>PROS:</u></span> Component is simple, very learnable </td>
+          <td>1. Tab through website until at dropdown menu
+            <br><br>2. Press enter key to see main page of dropdown menu
+            <br><br><span class="red-text"><u>CONS:</u></span> Dropdown menu with options not accessible from home page</td>
+          <td>1. Press side bar
+            <br><br>2.  Press desired dropdown menu button and taken to main page of dropdown menu
+            <br><br>3.  Press side bar of that page
+            <br><br>4.  Press desired drop down option
+            <br><br><span class="red-text"><u>CONS:</u></span> There are a lot of steps that could be confusing for first-time users</td>
+
+           </td>
+          <td>- Active: Dropdown menu appears on hover
+            <br><br> - Focused: 1. Curser changes to pointer
+            <br><br> - Selected: Current option is highlighted
+            <br><br><span class="color-text"><u>PROS:</u></span> Dropdown is accessible; colors are distinct</td>
+            </td>
+          <td>- Click: Plays when menu is selected 
+            <br><br> - Navigation Cue: Sound when moving through options
+            <br><br> <span class="red-text"><u>CONS:</u></span> Screen Reader is very confusing</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <h4 class="padding-top"> Applications can also be represented by <span class="blue-text">State Models</span>, which are a great way to <span class="blue-text">visualize user interactions with a component</span>. </h4>
+    <p>Let's look into <span class="blue-text"> Courses @ Brown </span> as it currently exists, specifically for <span class="purple-text"> Mouse Interaction</span> and <span class="orange-text">Keyboard Interaction</span>.
+    </p>
+    <div id="mouseGallery1">
+      <h3><span class="purple-text"><u>Mouse Interaction</u></h3>
+      <img class="mouse1" src="./assets/Mouse1.png"/>
+    </div>  
+
+    <div id="keyboardGallery1">
+      <h3><span class="orange-text"> <u>Keyboard Interaction</u></span></h3>
+      <img class="keyboard1" src="./assets/Keyboard1.png"/>
+    </div>  
+
+    <h4> From our <span class="color-text">PROS</span> and <span class="red-text">CONS </span>, we know there are improvements that can be made to enhance user experience, particularly in accessibility and learnability.
+    <p><span class="blue-text">Let's see how the original state models can be modified to incorporate our feedback from earlier. </span>
+    </p>
+
+   
+    <h3 class="padding-top"><span class="purple-text"><u>Mouse Interaction</u></h3>
+    <div class="state-photos">
+      <p><span class="purple-text">The revised state model removes an extra mosue click, which makes the dropdown menu is easier to access, which also increased learnability. </span>
+    <div class="text-container">
+      <h4>Original</h4>
+      <h4>Revised</h4>
+    </div>
+    <div id="mouseGallery">
+      <img class="mouse1" src="./assets/Mouse1.png"/>
+      <img class="mouse2" src="./assets/Mouse2.png"/>
+    </div>  
+    </p>
+    </div>
+    
+    <h3 class="padding-top"><span class="purple-text"><u>Keyboard Interaction</u></h3>
+    <div class="state-photos">
+      <p><span class="purple-text">The revised state model allows Tabbing features to be active while in the dropdown menu, which would better continueuty, allowing for better learnability. </span>
+    <div class="text-container">
+    <h4>Original</h4>
+    <h4>Revised</h4>
+    </div>
+    <div id="mouseGallery">
+    <img class="keyboard1" src="./assets/Keyboard1.png"/>
+    <img class="keyboard2" src="./assets/Keyboard2.png"/>
+    </div>  
+    </div>
+
+<h4 class="padding-top"> Soo, now that we have our new state models, let's see what these changes would look like!
+</h4>
+<div class="state-photos">
+  <p>Note: the arrows represent actions (mouse clicks / keyboard interactions) the user will take.
+<div class="text-container">
+  <h4>Original</h4>
+  <h4>Revised</h4>
+  </div>
+  <div id="mouseGallery">
+  <img class="mouse1" src="./assets/old.png"/>
+  <img class="keyboard2" src="./assets/new.png"/>
+  </div>  
+  </div>
+</div>
+
+
+  </body>
+
+  <h4 class="padding-top"> WOW! You have to agree that looks so much better! While doing this project, I had a lot of thoughts and have comprised them for you below in my reflection!
+  </h4>
+  <p> Most of the dropdown menus I observed had signifiers that made them at least somewhat learnable when using a mouse.
+However, the dropdown features were not always not most accessible when using keyboard shortcuts, which could be confusing especially if you switch between using your mouse and keyboard. 
+Yes, for one of my state designs, I added in being able to tab out of a dropdown menu, which could improve the learnability of the feature as users are already used to this motion.
+Applying the definition of mismatch from the video, the change I made in my design makes the discovery portion of the learning experience much easier as the drop down menu will appear on a simple hover. This could get clunky, which is why the action must be a prolonged hover to indicate the intent.
+Components that tend to do well, overall, are ones with easy discoverability and learnability. Often, these components are modeled after their real-life counterparts, like computer files and the trash bin.
+
+Drop down menus that do not appear, have the cursor change states, or outline the button on a hover can be very confusing to people who do not know a drop down menu is there. 
+Mouse users are definitely the most commonly prioritized feature in the process of creating components for websites, which causes most websites to be catered to these users. For apps, those are definitely catered towards touch features, which again favor able-bodied users</p>
+
+
+</html>

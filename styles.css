@@ -1,0 +1,313 @@
+#siteLogo{
+  width: 25%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Poppins';
+  text-transform: uppercase;
+}
+
+h1{
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 20%;
+  padding-top: 20%;
+}
+
+h2{
+  font-size: 22px;
+  text-align: center;
+  padding-top: .75%;
+  padding-left: 3.9%;
+  padding-right: 3.9%;
+}
+
+h3{
+  font-size: 20px;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  justify-content: center;
+}
+
+h4{
+  font-size: 20px;
+  padding-left: 5%;
+  padding-right: 4%;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+h5{
+  font-size: 26px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #F1F8FF;
+}
+
+h6{
+  font-size: 16px;
+  margin-top: 0%;  
+  text-align: center;
+}
+
+p{
+  font-size: 18px;
+  padding-left: 10%;
+  padding-right: 5%;
+
+  margin-top: 0;  
+  margin-bottom: 0;  
+  padding-top: .5%;
+
+  justify-content: center;
+}
+
+.blue-text{
+  color:blue;
+  font-weight: bold;
+}
+
+.purple-text{
+  color:rgb(71, 0, 152);
+  font-weight: bold;
+}
+
+
+.color-text{
+  color:rgb(0, 134, 60);
+  font-weight: bold;
+}
+
+.orange-text{
+  color:rgb(255, 0, 251);
+  font-weight: bold;
+}
+
+.red-text{
+  color:rgb(232, 0, 0);
+  font-weight: bold;
+}
+
+body {
+  background-color: #F1F8FF; 
+}
+
+.video-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+.input-container { 
+  display: flex;
+  gap: 45%;
+  flex-direction: row;
+  height: 5%;
+  margin-bottom: 0;
+  padding-left: 25.5%;
+}
+
+#staffGallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 380px;
+  width: 100%;
+  gap: 50px;
+}
+
+.video {
+  width: 75%;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding-right: 5%;
+}
+
+.galleryImage{
+  height: 360px; 
+  width: 390px; 
+  border-radius: 5px;
+} 
+
+#cabGallery{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 370px;
+  width: 100%;
+  gap: 10px;
+}
+
+#driveGallery{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 260px;
+  width: 100%;
+  gap: 10px;
+}
+
+#csGallery{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 310px;
+  width: 100%;
+  gap: 10px;
+}
+
+#tableGallery{
+  display: flex;
+  flex: row;
+  padding-left: 6%;
+ 
+  height: 380px;
+  gap: 150px;
+}
+
+.cabImage{
+  height: 360px; 
+  width: 250px; 
+  border-radius: 5px;
+
+}
+
+.driveImage{
+  height: 250px; 
+  width: 250px; 
+  border-radius: 5px;
+}
+
+.csImage{
+  height: 300px; 
+  width: 250px; 
+  border-radius: 5px;
+}
+
+.text-container {  
+  display: flex;
+  flex: 3;
+  justify-content: top;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 110px;
+  /* padding-top: 30px; */
+  gap: 200px;
+  width: 90%;
+}
+
+.state-photos{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#mouseGallery{
+  display: flex;
+  flex: 7;
+  flex-direction: column;
+  align-items: left;
+  height: 630px;
+  width: 100%;
+  gap: 30px;
+
+}
+
+#mouseGallery1{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  height: 380px;
+  width: 100%;
+}
+
+#keyboardGallery1{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  height: 400px;
+  width: 100%;
+
+}
+
+#stateGallery{
+  display: flex; 
+  flex: 3;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  height: 600px;
+  width: 100%;
+}
+
+.mouse1{
+  height: 300px; 
+  width: 625px;
+  border-radius: 10px;
+
+} 
+
+.mouse2{
+  height: 260px; 
+  width: 500px; 
+  border-radius: 10px;
+} 
+
+.keyboard1{
+  height: 300px; 
+  width: 625px; 
+  border-radius: 10px;
+
+} 
+
+.keyboard2{
+  height: 300px; 
+  width: 625px; 
+  border-radius: 10px;
+
+
+} 
+table {
+  width: 100%;
+  font-family: 'Poppins';
+  margin-top: 0;
+  padding-top: 1%;
+  padding-left: 4%; 
+  padding-right: 4%;
+  font-size: large;
+}
+
+th, td {
+  padding: .5%; 
+}
+
+
+th {
+  font-weight: bold;
+  width: 20%;
+  
+}
+
+td {
+  text-align: left;
+  vertical-align: top;
+  padding-top: 0%;
+  padding-left: 1.25%;
+  padding-right: 1.25%; 
+}
+
+.padding-top {
+  padding-top: 2.5%;
+}
+
+
+
+/*used chat to help with video playing and css help

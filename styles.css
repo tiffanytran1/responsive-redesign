@@ -4,7 +4,7 @@
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Poppins';
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h1{
@@ -70,7 +70,7 @@ p{
 }
 
 .blue-text{
-  color:blue;
+  color:rgb(13, 70, 163);
   font-weight: bold;
 }
 
@@ -121,6 +121,9 @@ body {
   height: 380px;
   width: 100%;
   gap: 50px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
 }
 
 .video {
@@ -130,10 +133,104 @@ body {
   padding-right: 5%;
 }
 
-.galleryImage{
-  height: 360px; 
-  width: 390px; 
+#styleGuideGallery{
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  /* justify-content: center; */
+  justify-content: flex-start;
+
+  align-items: center;
+  height: 615px;
+  width: 95%;
+  padding-bottom: 2%;
+  padding-right: 5%;
+
+
+}
+.styleGuide{
+  height: 590px; 
+  width: 75%; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+
+} 
+
+#splitMockupGallery{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  justify-content: flex-start;
+
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  padding-bottom: 2%;
+  gap: 10px;
+}
+
+#smallerGallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  padding-bottom: 2%;
+
+
+}
+.phoneMockup{
+  height: 700px; 
+  width: 90%; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+
+} 
+
+.tabletMockup{
+  height: 700px; 
+  width: 90%; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+
+} 
+
+#largeComputerGallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+#largeComputerGallery a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+
+.largeComputer{
+  height: 700px; 
+  width: 80%; 
+  border-radius: 5px;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+} 
+
+.galleryImage{
+  height: 390px; 
+  width: 590px; 
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
 } 
 
 #cabGallery{
@@ -272,9 +369,8 @@ body {
   height: 300px; 
   width: 625px; 
   border-radius: 10px;
-
-
 } 
+
 table {
   width: 100%;
   font-family: 'Poppins';
@@ -307,6 +403,8 @@ td {
 .padding-top {
   padding-top: 2.5%;
 }
+
+
 
 
 

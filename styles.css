@@ -4,22 +4,32 @@
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Poppins';
+  color: #00314f;
   /* text-transform: uppercase; */
 }
+a {
+  color: #f1f8ff; /* normal link color */
+}
 
+a:hover {
+  color: #00314f; /* optional: adds underline on hover */
+  text-decoration: underline;
+
+}
 h1{
   font-size: 60px;
   text-align: center;
-  padding-bottom: 20%;
-  padding-top: 20%;
+  padding-bottom: 17%;
+  padding-top: 11.5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 h2{
-  font-size: 22px;
+  font-size: 26px;
   text-align: center;
-  padding-top: .75%;
-  padding-left: 3.9%;
-  padding-right: 3.9%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 h3{
@@ -53,8 +63,9 @@ h5{
 
 h6{
   font-size: 16px;
-  margin-top: 0%;  
-  text-align: center;
+  margin-top: 1%;  
+  padding-left: 2.5%;
+  text-align: left;
 }
 
 p{
